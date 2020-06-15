@@ -8,6 +8,16 @@
 /* цвет акцента портфолио  rgba(33, 150, 243, 0.9) */
 /* цвет шрифта кнопок #FFFFFF */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-title-color: #212121;
   --secondary-text-color: #757575;
@@ -26,8 +36,41 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* ширина контейнера */
+.conteiner {
+  width: 1200;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* общие сбросы */
+.link {
+  text-decoration: none;
+  color: var(--primary-title-color);
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* лого */
 .logo {
+  display: block;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -48,7 +91,15 @@ body {
 }
 
 /* категории */
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
   color: var(--primary-title-color);
   font-style: normal;
   font-weight: 500;
@@ -56,7 +107,9 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -66,29 +119,43 @@ body {
   color: var(--accent-color);
 }
 
-.link {
-  text-decoration: none;
-  color: var(--primary-title-color);
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
-.list {
-  list-style: none;
-}
 /* контакты в шапке */
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
 }
 
+.contacts .item + .item {
+  margin-left: 50px;
+}
+.contacts {
+  display: flex;
+}
+
 /* герой */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -97,6 +164,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-white-color);
+  margin-bottom: 30px;
 }
 .button {
   color: var(--hero-white-color);
@@ -106,13 +174,27 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 /* секция преимущества */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-list .item {
+  width: 270px;
+}
+
 .features-title-hidden {
   display: none;
 }
-
+.features {
+  padding-top: 94px;
+}
 .features .features-title {
   font-style: normal;
   font-weight: bold;
@@ -146,14 +228,26 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.activity-title {
+  margin-bottom: 50px;
+}
+.section-activity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* секция команда */
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-team .team-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .section-team .team-name {
   font-style: normal;
@@ -174,7 +268,12 @@ body {
 .team-social .link:focus {
   color: var(--accent-color);
 }
-
+.team-name {
+  margin-bottom: 10px;
+}
+.team-aside {
+  margin-bottom: 16px;
+}
 /* клиенты */
 .section-clients .clients-title {
   font-style: normal;
@@ -186,6 +285,9 @@ body {
 .clients-list .list:hover,
 .clients-list .list:focus {
   color: var(--accent-color);
+}
+.clients-title {
+  margin-bottom: 50px;
 }
 
 /* футер */
@@ -255,6 +357,7 @@ body {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
+  margin-bottom: 4px;
 }
 .portfolio-aside {
   font-style: normal;
@@ -275,4 +378,11 @@ body {
 .portfolio .current {
   color: var(--button-white-text);
   background-color: var(--accent-color);
+}
+.portfolio-box {
+  display: inline-block;
+  margin-bottom: 94px;
+}
+.portfolio-button {
+  margin-bottom: 50px;
 }
