@@ -400,7 +400,7 @@ p {
 
 /* секция футер */
 .footer {
-   background-color: var(--fotter-background-color);
+  background-color: var(--fotter-background-color);
 }
 .footer .conteiner {
   display: flex;
@@ -458,7 +458,7 @@ p {
 }
 
 .social,
-.newsletter { 
+.newsletter {
   display: inline-block;
   margin-bottom: 20px;
   font-style: normal;
@@ -492,8 +492,7 @@ p {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  }
-
+}
 .btn .portfolio-button {
   padding: 6px 22px 6px 22px;
   font-family: Roboto, sans-serif;
@@ -502,8 +501,9 @@ p {
   line-height: 26px;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
-  background-color: var(--section-background-color)
+  background-color: var(--section-background-color);
   border-radius: 4px;
+  border: transparent;
 }
 .btn-item {
   margin-left: 8px;
@@ -516,6 +516,7 @@ p {
   color: var(--button-white-text);
   background-color: var(--accent-color);
 }
+
 .portfolio-title {
   padding: 20px 24px 0px 20px;
   margin-bottom: 4px;
