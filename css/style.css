@@ -115,11 +115,10 @@ p {
   margin-left: 85px;
 }
 .site-nav .item {
-  width: calc((100% - 100px) / 3);
-  margin-left: 50px;
+  margin-right: 50px;
 }
-.site-nav .item:first-child {
-  margin-left: 0;
+.site-nav .item:last-child {
+  margin-right: 0;
 }
 .main-nav {
   display: flex;
