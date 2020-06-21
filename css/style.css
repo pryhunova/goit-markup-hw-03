@@ -487,7 +487,7 @@ p {
 .portfolio-title-hidden {
   display: none;
 }
-/* фильтр */
+/* кнопки-фильтр */
 .btn {
   margin-bottom: 50px;
   display: flex;
@@ -517,42 +517,8 @@ p {
   color: var(--button-white-text);
   background-color: var(--accent-color);
 }
-.portfolio-button::-moz-focus-inner {
-  border: none;
-}
 
-.portfolio-title {
-  padding: 20px 24px 0px 20px;
-  margin-bottom: 4px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: var(--primary-title-color);
-}
-.portfolio-aside {
-  padding: 0px 24px 20px 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-/*скрыт для удобства работы */
-.portfolio-text {
-  display: none;
-  padding: 63px 24px;
-  /* width: 322px; */
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: var(--button-white-text);
-  background-color: var(--accent-color);
-}
+/*активная страница в шапке */
 .portfolio .current {
   color: var(--button-white-text);
   background-color: var(--accent-color);
@@ -582,4 +548,40 @@ p {
 
 .conteiner-portfolio:nth-last-child(n + 6) {
   margin-bottom: 30px;
+}
+
+/* заголовки в сетке портфолио */
+.portfolio-title {
+  padding: 20px 24px 0px 20px;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+}
+
+/* текст под заголовком */
+.portfolio-aside {
+  padding: 0px 24px 20px 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* текст скрыт для удобства оформления блока */
+.portfolio-text {
+  display: none;
+  padding: 63px 24px;
+  /* width: 322px; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--button-white-text);
+  background-color: var(--accent-color);
 }
