@@ -44,7 +44,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid green;
 }
 
 /* общие сбросы */
@@ -417,6 +416,19 @@ p {
   display: block;
 }
 
+/*контейнер adress-item */
+.adress-item {
+  padding: 20px 0px 20px 0px;
+}
+/*контейнер social-list */
+.social-list {
+  padding: 72px 0 100px 0;
+}
+/*контейнер подписки */
+.newsletter-list {
+  padding: 72px 0 94px 0;
+}
+
 /*logo-footer */
 .adress-item .logo {
   margin-bottom: 20px;
@@ -448,6 +460,7 @@ p {
 .label .link:focus {
   color: var(--accent-color);
 }
+
 /* соцсети */
 .label {
   display: flex;
