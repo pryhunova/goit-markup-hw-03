@@ -44,6 +44,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid green;
 }
 
 /* общие сбросы */
@@ -162,14 +163,11 @@ p {
 }
 
 /* герой */
-.conteiner-hero {
-  max-width: 1600px;
+.hero .conteiner {
   height: 600px;
-  padding: 200px 452px 200px 452px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 200px 0px 200px 0px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-align: center;
   background-color: var(--secondary-text-color);
 }
@@ -182,6 +180,7 @@ p {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
+  width: 696px;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -204,14 +203,19 @@ p {
 }
 
 /* секция преимущества */
-.features-list {
-  display: flex;
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.features-list {
+  display: flex;
+}
 .features-list .item + .item {
-  padding-left: 30px;
+  margin-left: 30px;
+}
+.features-content {
+  padding-top: 30px;
 }
 
 /* скрытый заголовок секции */
@@ -229,8 +233,7 @@ p {
   text-transform: uppercase;
 }
 .features-title {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 /* описание под заголовком */
 .features .features-text {
@@ -342,8 +345,10 @@ p {
 .team-social .link:focus {
   color: var(--accent-color);
 }
+.team-content {
+  padding: 30px 32px 24px 32px;
+}
 .team-name {
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 .team-aside {
@@ -351,7 +356,6 @@ p {
 }
 /* соцсети команды */
 .team-social {
-  padding: 0px 32px 24px 32px;
   display: flex;
   justify-content: center;
 }
@@ -448,6 +452,7 @@ p {
 .label {
   display: flex;
 }
+
 /*margin-right: 10px;*/
 .social-list .item {
   width: calc((100% - 30px) / 4);
@@ -538,21 +543,15 @@ p {
 .portfolio .item:nth-child(3n) {
   margin-right: 0;
 }
-
-/*.portfolio .item:nth-child(3n) {
-  margin-right: 0;
-}
-.portfolio .item:nth-child(-n + 3) {
-  margin-bottom: 0;
-} */
-
-.conteiner-portfolio:nth-last-child(n + 6) {
+.portfolio .item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
+.portfolio-content {
+  padding: 20px 24px 20px 24px;
+}
 /* заголовки в сетке портфолио */
 .portfolio-title {
-  padding: 20px 24px 0px 20px;
   margin-bottom: 4px;
   font-style: normal;
   font-weight: bold;
@@ -564,7 +563,6 @@ p {
 
 /* текст под заголовком */
 .portfolio-aside {
-  padding: 0px 24px 20px 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
