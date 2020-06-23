@@ -359,6 +359,14 @@ p {
   justify-content: center;
 }
 
+.team-icons {
+  width: calc((100% - 30px) / 4);
+  margin-right: 10px;
+}
+.team-icons:last-child {
+  margin-right: 0;
+}
+
 /* секция клиенты */
 .section-clients .clients-title {
   font-style: normal;
@@ -419,10 +427,13 @@ p {
 /*контейнер adress-item */
 .adress-item {
   padding: 20px 0px 20px 0px;
+  margin-right: 69px;
 }
+
 /*контейнер social-list */
 .social-list {
   padding: 72px 0 100px 0;
+  margin-right: 94px;
 }
 /*контейнер подписки */
 .newsletter-list {
